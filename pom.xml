@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hr.nruzic.commons.conventions</groupId>
+    <artifactId>nruzic-commons-conventions</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>nruzic commons conventions</name>
+    <description>Collection of useful conventions and configuration files</description>
+    <url>https://github.com/nruzic/nruzic-commons-conventions</url>
+
+    <scm>
+        <url>https://github.com/nruzic/nruzic-commons-conventions</url>
+        <connection>scm:git:https://github.com/nruzic/nruzic-commons-conventions.git</connection>
+        <developerConnection>scm:git:https://github.com/nruzic/nruzic-commons-conventions.git</developerConnection>
+        <tag>1.0.0-SNAPSHOT</tag>
+    </scm>
+    
+    <properties>
+
+        <!-- project parameters override -->
+        <project-name>nruzic-commons-conventions</project-name>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>nruzic</id>
+            <name>Nikola Ružić</name>
+            <email>nikola.ruzic.dev@gmail.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+</project>

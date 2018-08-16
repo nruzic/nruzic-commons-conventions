@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+    "-//Puppy Crawl//DTD Check Configuration 1.2//EN"
+    "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<!-- Checkstyle configuration that checks the basic coding conventions for PZZ project from: - some best practices Checkstyle 
+    is very configurable. Be sure to read the documentation at http://checkstyle.sf.net (or in your downloaded distribution). 
+    Most Checks are configurable, be sure to consult the documentation. To completely disable a check, just comment it out or 
+    delete it from the file. Finally, it is worth reading the documentation. -->
+
+<module name="Checker">
+    <!-- If you set the basedir property below, then all reported file names will be relative to the specified directory. 
+        See http://checkstyle.sourceforge.net/5.x/config.html#Checker <property name="basedir" value="${basedir}"/> -->
+
+    <!-- Checks that each Java package has a Javadoc file used for commenting. -->
+    <!-- See http://checkstyle.sf.net/config_javadoc.html#JavadocPackage -->
+    <module name="JavadocPackage">
+        <property name="allowLegacy" value="true" />
+    </module>
+
+    <module name="TreeWalker">
+
+        <property name="cacheFile" value="${checkstyle.cache.file}" />
+
+        <!-- Checks for Javadoc comments. -->
+        <!-- See http://checkstyle.sf.net/config_javadoc.html -->
+        <module name="JavadocMethod" />
+        <module name="JavadocType" />
+        <module name="JavadocVariable" />
+        <module name="JavadocStyle" />
+
+        <!-- Checks for Naming Conventions. -->
+        <!-- See http://checkstyle.sf.net/config_naming.html -->
+        <module name="ConstantName" />
+        <module name="LocalFinalVariableName" />
+        <module name="LocalVariableName" />
+        <module name="MemberName" />
+        <module name="MethodName" />
+        <module name="PackageName" />
+        <module name="ParameterName" />
+        <module name="StaticVariableName" />
+        <module name="TypeName" />
+
+        <!-- Checks for imports -->
+        <!-- See http://checkstyle.sf.net/config_import.html -->
+        <module name="AvoidStarImport" />
+        <module name="IllegalImport" /> <!-- defaults to sun.* packages -->
+        <module name="RedundantImport" />
+        <module name="UnusedImports" />
+
+        <!-- Checks for common coding problems -->
+        <!-- See http://checkstyle.sf.net/config_coding.html -->
+
+        <!-- DEPRECATED since Checkstyle v5.6 -->
+        <!-- <module name="DoubleCheckedLocking" /> -->
+
+        <module name="EmptyStatement" />
+        <module name="EqualsHashCode" />
+        <module name="HiddenField" />
+        <module name="IllegalInstantiation" />
+        <module name="MissingSwitchDefault" />
+        <module name="RedundantThrows" />
+        <module name="SimplifyBooleanExpression" />
+        <module name="SimplifyBooleanReturn" />
+
+        <!-- Checks for class design -->
+        <!-- See http://checkstyle.sf.net/config_design.html -->
+        <module name="DesignForExtension" />
+        <module name="FinalClass" />
+        <module name="HideUtilityClassConstructor" />
+        <module name="InterfaceIsType" />
+        <module name="VisibilityModifier" />
+
+
+        <!-- Miscellaneous other checks. -->
+        <!-- See http://checkstyle.sf.net/config_misc.html -->
+        <module name="TodoComment" />
+
+    </module>
+
+</module>
