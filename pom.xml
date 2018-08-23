@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>hr.nruzic.commons.conventions</groupId>
+    <groupId>com.github.nruzic.commons.conventions</groupId>
     <artifactId>nruzic-commons-conventions</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>nruzic commons conventions</name>
     <description>Collection of useful conventions and configuration files</description>
     <url>https://github.com/nruzic/nruzic-commons-conventions</url>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
     <scm>
         <url>https://github.com/nruzic/nruzic-commons-conventions</url>
         <connection>scm:git:https://github.com/nruzic/nruzic-commons-conventions.git</connection>
         <developerConnection>scm:git:https://github.com/nruzic/nruzic-commons-conventions.git</developerConnection>
-        <tag>1.0.0-SNAPSHOT</tag>
+        <tag>HEAD</tag>
     </scm>
-    
-    <properties>
 
-        <!-- project parameters override -->
-        <project-name>nruzic-commons-conventions</project-name>
-    </properties>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh-snapshot-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh-staging-repo</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <developers>
         <developer>

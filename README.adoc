@@ -1,0 +1,3 @@
+= Common conventions for my own Java projects
+
+Common programming language and tools conventions configuration file.
