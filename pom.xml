@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.nruzic.commons.conventions</groupId>
     <artifactId>nruzic-commons-conventions</artifactId>
-    <version>1.0.0-alpha3-SNAPSHOT</version>
+    <version>1.0.0-alpha3</version>
     <name>nruzic commons conventions</name>
     <description>Collection of useful conventions and configuration files</description>
     <url>https://github.com/nruzic/nruzic-commons-conventions</url>
@@ -23,7 +21,7 @@
         <url>https://github.com/nruzic/nruzic-commons-conventions</url>
         <connection>scm:git:http://github.com/nruzic/nruzic-commons-conventions.git</connection>
         <developerConnection>scm:git:git@github.com:nruzic/nruzic-commons-conventions.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>1.0.0-alpha3</tag>
     </scm>
 
     <distributionManagement>
