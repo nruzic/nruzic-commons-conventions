@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -64,8 +66,17 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>${plugin-version-maven-release-plugin}</version>
                     <configuration>
+                        <!-- automatically assign parent version to submodules 
+                            if submodule is not specifying it's own version -->
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <!-- this is a hack to trigger custom release profile 
+                            (not the one from master pom) during preparation step, in addition to execution 
+                            by perform step which is triggered by releaseProfiles tag -->
+                        <arguments>-DdoRelease</arguments>
                         <!-- prepare settings -->
                         <preparationGoals>clean verify site</preparationGoals>
+                        <!-- completion settings -->
+                        <completionGoals>clean verify site</completionGoals>
                         <!-- perform settings -->
                         <useReleaseProfile>false</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
