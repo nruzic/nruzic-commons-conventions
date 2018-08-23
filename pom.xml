@@ -5,7 +5,7 @@
 
     <groupId>com.github.nruzic.commons.conventions</groupId>
     <artifactId>nruzic-commons-conventions</artifactId>
-    <version>1.0.0-alpha2</version>
+    <version>1.0.0-alpha3-SNAPSHOT</version>
     <name>nruzic commons conventions</name>
     <description>Collection of useful conventions and configuration files</description>
     <url>https://github.com/nruzic/nruzic-commons-conventions</url>
@@ -21,7 +21,7 @@
         <url>https://github.com/nruzic/nruzic-commons-conventions</url>
         <connection>scm:git:http://github.com/nruzic/nruzic-commons-conventions.git</connection>
         <developerConnection>scm:git:git@github.com:nruzic/nruzic-commons-conventions.git</developerConnection>
-        <tag>1.0.0-alpha2</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
