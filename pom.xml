@@ -18,7 +18,7 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/nruzic/nruzic-commons-conventions</url>
+        <url>http://github.com/nruzic/nruzic-commons-conventions</url>
         <connection>scm:git:http://github.com/nruzic/nruzic-commons-conventions.git</connection>
         <developerConnection>scm:git:git@github.com:nruzic/nruzic-commons-conventions.git</developerConnection>
         <tag>HEAD</tag>
