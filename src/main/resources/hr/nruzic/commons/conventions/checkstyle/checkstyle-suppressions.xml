@@ -1,4 +1,4 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- ============================================================================================================== -->
 <!--                                                                                                                -->
 <!-- Copyright 2019 Nikola Ruzic                                                                                    -->
@@ -19,18 +19,17 @@
 <!-- OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                                                                  -->
 <!--                                                                                                                -->
 <!-- ============================================================================================================== -->
-<replacements>
-    <replacement key="get" scope="1" mode="0">Gets the</replacement>
-    <replacement key="set" scope="1" mode="0">Sets the</replacement>
-    <replacement key="add" scope="1" mode="0">Adds the</replacement>
-    <replacement key="edit" scope="1" mode="0">Edits the</replacement>
-    <replacement key="remove" scope="1" mode="0">Removes the</replacement>
-    <replacement key="init" scope="1" mode="0">Inits the</replacement>
-    <replacement key="parse" scope="1" mode="0">Parses the</replacement>
-    <replacement key="create" scope="1" mode="0">Creates the</replacement>
-    <replacement key="build" scope="1" mode="0">Builds the</replacement>
-    <replacement key="is" scope="1" mode="0">Checks if is</replacement>
-    <replacement key="print" scope="1" mode="0">Prints the</replacement>
-    <replacement key="has" scope="1" mode="0">Checks for</replacement>
-</replacements>
+<!DOCTYPE suppressions PUBLIC
+  "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+  "https://checkstyle.org/dtds/suppressions_1_2.dtd">
 
+<suppressions>
+    <!-- Suppress all Checks for hidden files and folders -->
+    <suppress files="[/\\]\..+" checks=".*" />
+    <!-- Suppress all Checks for Maven-generated code -->
+    <suppress files="[/\\]target[/\\]" checks=".*" />
+    <!-- Suppress all Checks for archives, classes and other binary files -->
+    <suppress files=".+\.(?:jar|zip|war|class|tar|bin)$" checks=".*" />
+    <!-- Suppress all Checks for image files -->
+    <suppress files=".+\.(?:png|gif|jpg|jpeg)$" checks=".*" />
+</suppressions>
