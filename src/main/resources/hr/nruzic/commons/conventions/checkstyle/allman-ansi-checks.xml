@@ -57,6 +57,7 @@
 
     <!-- check line length -->
     <module name="RegexpSingleline">
+        <property name="id" value="lineLengthCheck"/>
         <property name="format" value="^.{121,}$" />
         <property name="message" value="Line longer then 120 characters." />
     </module>
