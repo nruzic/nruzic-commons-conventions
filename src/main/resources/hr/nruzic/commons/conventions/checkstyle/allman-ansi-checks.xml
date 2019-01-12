@@ -57,7 +57,8 @@
 
     <!-- check line length -->
     <module name="RegexpSingleline">
-        <property name="id" value="lineLengthCheck"/>
+        <!-- Prefix in id is woraroud for https://jira.apache.org/jira/browse/MCHECKSTYLE-344 -->
+        <property name="id" value="check.lineLength"/>
         <property name="format" value="^.{121,}$" />
         <property name="message" value="Line longer then 120 characters." />
     </module>
