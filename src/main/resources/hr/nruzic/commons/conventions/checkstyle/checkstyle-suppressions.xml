@@ -29,7 +29,7 @@
     <!-- Suppress all Checks for Maven-generated code -->
     <suppress files="[/\\]target[/\\]" checks=".*" />
     <suppress files="release.properties" checks=".*" />
-    <suppress files="pom.xml" id="lineLengthCheck" />
+    <suppress files="pom.xml" id="check.lineLength" />
     <!-- Suppress all Checks for archives, classes and other binary files -->
     <suppress files=".+\.(?:jar|zip|war|class|tar|bin)$" checks=".*" />
     <!-- Suppress all Checks for image files -->
