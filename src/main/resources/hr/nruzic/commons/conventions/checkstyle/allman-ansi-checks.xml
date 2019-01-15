@@ -48,6 +48,13 @@
     <module name="NewlineAtEndOfFile">
     </module>
 
+    <!-- Checks whether files end with 2 or more new line chars.
+    -->
+    <module name="RegexpMultiline">
+        <property name="format" value="(\r?\n){2,}\z" />
+        <property name="message" value="Multiple newlines at end of a file." />
+    </module>
+
     <!-- check to find trailing whitespace at the end of a line -->
     <module name="RegexpSingleline">
         <!-- \s matches whitespace character, $ matches end of line. -->
