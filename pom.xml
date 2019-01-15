@@ -32,7 +32,7 @@
 
     <groupId>com.github.nruzic.commons.conventions</groupId>
     <artifactId>nruzic-commons-conventions</artifactId>
-    <version>2.0.6</version>
+    <version>2.0.7-SNAPSHOT</version>
     <name>nruzic commons conventions</name>
     <description>Collection of useful conventions and configuration files</description>
     <url>https://github.com/nruzic/nruzic-commons-conventions</url>
@@ -41,7 +41,7 @@
         <url>http://github.com/nruzic/nruzic-commons-conventions</url>
         <connection>scm:git:http://github.com/nruzic/nruzic-commons-conventions.git</connection>
         <developerConnection>scm:git:git@github.com:nruzic/nruzic-commons-conventions.git</developerConnection>
-        <tag>nruzic-commons-conventions-2.0.6</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
