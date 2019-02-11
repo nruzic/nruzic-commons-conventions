@@ -158,6 +158,7 @@
         </module>
         <module name="AvoidStaticImport">
             <property name="severity" value="error" />
+            <property name="excludes" value="org.assertj.core.api.Assertions.*" />
             <property name="excludes" value="org.junit.Assert.*" />
             <property name="excludes" value="org.mockito.Mockito.*" />
             <property name="excludes" value="org.mockito.Matchers.*" />
@@ -166,8 +167,27 @@
         </module>
         <module name="ImportOrder">
             <property name="severity" value="error" />
+            <!--
+                All static imports are at the bottom.
+                Groups for static import are defined by the property 'staticGroups'.
+                The blank line between groups is driven by the property 'separatedStaticGroups'.
+                For example:
+
+                import a.b.D;
+                import x.y.Z;
+
+                import static a.b.C.*;
+                import static x.y.Z.*;
+            -->
+            <property name="option" value="bottom"/>
+            <!-- Non static imports -->
             <property name="groups" value="java,javax,com,hr,io,net,org" />
             <property name="separated" value="true" />
+            <property name="ordered" value="true"/>
+            <!-- Static imports -->
+            <property name="staticGroups" value="java,javax,com,hr,io,net,org" />
+            <property name="separatedStaticGroups" value="true"/>
+            <property name="sortStaticImportsAlphabetically" value="true"/>
         </module>
         <module name="RedundantImport">
             <property name="severity" value="error" />
@@ -193,8 +213,15 @@
         </module>
         <module name="NoWhitespaceAfter">
         </module>
+        <!-- No whitespace allowed before following characters -->
         <module name="NoWhitespaceBefore">
-            <property name="tokens" value="SEMI,DOT,POST_DEC,POST_INC" />
+            <property name="tokens"
+                value="COMMA, SEMI, POST_INC, POST_DEC, GENERIC_START, GENERIC_END, ELLIPSIS, METHOD_REF" />
+        </module>
+        <!-- '.' preceded with whitespace is allowed only on split statements -->
+        <module name="NoWhitespaceBefore">
+            <property name="allowLineBreaks" value="true" />
+            <property name="tokens" value="DOT" />
         </module>
         <module name="WhitespaceAfter">
             <property name="tokens" value="COMMA,SEMI" />
@@ -226,8 +253,12 @@
         <module name="FallThrough">
         </module>
         <module name="FinalLocalVariable">
+            <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
         </module>
         <module name="HiddenField">
+            <property name="ignoreConstructorParameter" value="true"/>
+            <property name="ignoreSetter" value="true"/>
+            <property name="setterCanReturnItsClass" value="true"/>
         </module>
         <module name="IllegalCatch">
         </module>

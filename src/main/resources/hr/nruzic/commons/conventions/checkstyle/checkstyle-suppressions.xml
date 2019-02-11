@@ -33,7 +33,7 @@
     <!-- Suppress line length check of files:
          1. pom.xml files with root path
          2. asciidoc files with any path -->
-    <suppress files="pom.xml|.+\.(?:ad|adoc|asciidoc)$" id="check.lineLength" />
+    <suppress files="pom.xml|.+\.(?:ad|adoc|asciidoc|md|mkd|mkdn|mdown|markdown)$" id="check.lineLength" />
 
     <!-- Suppress all Checks for archives, classes and other binary files -->
     <suppress files=".+\.(?:jar|zip|war|class|tar|bin)$" checks=".*" />
