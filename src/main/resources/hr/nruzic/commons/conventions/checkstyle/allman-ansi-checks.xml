@@ -216,12 +216,13 @@
         <!-- No whitespace allowed before following characters -->
         <module name="NoWhitespaceBefore">
             <property name="tokens"
-                value="COMMA, SEMI, POST_INC, POST_DEC, GENERIC_START, GENERIC_END, ELLIPSIS, METHOD_REF" />
+                value="COMMA, SEMI, POST_INC, POST_DEC, GENERIC_END, ELLIPSIS, METHOD_REF" />
         </module>
-        <!-- '.' preceded with whitespace is allowed only on split statements -->
+        <!-- '.' preceded with whitespace is allowed only on split statements
+             '<' preceded with whitespace is allowed only for generic type definitions at beginning of methods -->
         <module name="NoWhitespaceBefore">
             <property name="allowLineBreaks" value="true" />
-            <property name="tokens" value="DOT" />
+            <property name="tokens" value="DOT, GENERIC_START" />
         </module>
         <module name="WhitespaceAfter">
             <property name="tokens" value="COMMA,SEMI" />
@@ -256,9 +257,10 @@
             <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
         </module>
         <module name="HiddenField">
-            <property name="ignoreConstructorParameter" value="true"/>
-            <property name="ignoreSetter" value="true"/>
-            <property name="setterCanReturnItsClass" value="true"/>
+            <property name="tokens" value="VARIABLE_DEF"/>
+        </module>
+        <module name="RequireThis">
+            <property name="checkMethods" value="false"/>
         </module>
         <module name="IllegalCatch">
         </module>
