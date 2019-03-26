@@ -218,11 +218,10 @@
             <property name="tokens"
                 value="COMMA, SEMI, POST_INC, POST_DEC, GENERIC_END, ELLIPSIS, METHOD_REF" />
         </module>
-        <!-- '.' preceded with whitespace is allowed only on split statements
-             '<' preceded with whitespace is allowed only for generic type definitions at beginning of methods -->
+        <!-- '.' preceded with whitespace is allowed only on split statements -->
         <module name="NoWhitespaceBefore">
             <property name="allowLineBreaks" value="true" />
-            <property name="tokens" value="DOT, GENERIC_START" />
+            <property name="tokens" value="DOT" />
         </module>
         <module name="WhitespaceAfter">
             <property name="tokens" value="COMMA,SEMI" />
