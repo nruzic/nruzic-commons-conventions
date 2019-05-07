@@ -29,14 +29,14 @@
     <!-- Suppress all Checks for Maven-generated code -->
     <suppress files="[/\\]target[/\\]" checks=".*" />
     <suppress files="release.properties" checks=".*" />
-
-    <!-- Suppress line length check of files:
-         1. pom.xml files with root path
-         2. asciidoc files with any path -->
-    <suppress files="pom.xml|.+\.(?:ad|adoc|asciidoc|md|mkd|mkdn|mdown|markdown)$" id="check.lineLength" />
-
     <!-- Suppress all Checks for archives, classes and other binary files -->
     <suppress files=".+\.(?:jar|zip|war|class|tar|bin)$" checks=".*" />
     <!-- Suppress all Checks for image files -->
     <suppress files=".+\.(?:png|gif|jpg|jpeg)$" checks=".*" />
+
+    <!-- Suppress line length check of files:
+         1. pom.xml files with root path
+         2. asciidoc files with any path -->
+    <suppress files="pom.xml|.+\.(?:ad|adoc|asciidoc|feature|md|mkd|mkdn|mdown|markdown)$" id="check.lineLength" />
+
 </suppressions>

@@ -64,7 +64,7 @@
 
     <!-- check line length -->
     <module name="RegexpSingleline">
-        <!-- Prefix in id is woraroud for https://jira.apache.org/jira/browse/MCHECKSTYLE-344 -->
+        <!-- Prefix in id is workaroud for https://jira.apache.org/jira/browse/MCHECKSTYLE-344 -->
         <property name="id" value="check.lineLength"/>
         <property name="format" value="^.{121,}$" />
         <property name="message" value="Line longer then 120 characters." />
@@ -126,7 +126,7 @@
             <property name="allowUndeclaredRTE" value="true" />
             <property name="suppressLoadErrors" value="true" />
             <property name="ignoreMethodNamesRegex" value="^.*[tT]est.*$" />
-            <property name="allowedAnnotations" value="Override,Test,NoJavadoc" />
+            <property name="allowedAnnotations" value="NoJavadoc,Override,Test,Given,When,Then" />
         </module>
         <module name="JavadocStyle">
         </module>
