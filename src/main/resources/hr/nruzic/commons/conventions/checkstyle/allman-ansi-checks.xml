@@ -126,7 +126,7 @@
             <property name="allowUndeclaredRTE" value="true" />
             <property name="suppressLoadErrors" value="true" />
             <property name="ignoreMethodNamesRegex" value="^.*[tT]est.*$" />
-            <property name="allowedAnnotations" value="NoJavadoc,Override,Test,Given,When,Then" />
+            <property name="allowedAnnotations" value="NoJavadoc,Override,Test,Given,When,Then,And,But" />
         </module>
         <module name="JavadocStyle">
         </module>
@@ -270,7 +270,7 @@
         <module name="MagicNumber">
         </module>
         <module name="MissingCtor">
-            <property name="severity" value="warning" />
+            <property name="severity" value="ignore" />
         </module>
         <module name="MissingSwitchDefault">
         </module>
